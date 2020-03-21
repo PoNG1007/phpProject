@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +12,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('\cricket\home\welcome');
+});
+
+Route::get('/login', function () {
+    return view('\cricket\login\main');
+});
+
+Route::get('/home', function () {
+    return view('\cricket\home\home');
 });
